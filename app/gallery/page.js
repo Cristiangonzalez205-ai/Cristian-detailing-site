@@ -1,6 +1,6 @@
 const cars = [
   {
-    title: 'Interior Detail',
+    title: 'Exterior Detail',
     image: '/cars/car1.jpeg',
     description: 'Full Exterior wash, including hand wash, dry, and shine',
   },
@@ -25,7 +25,7 @@ const cars = [
     description: 'A full Engine Detail'
   },
   {
-    title: 'standard wash',
+    title: 'Standard Wash',
     image: 'cars/car6.jpeg',
     description: 'A routine car wash'
   },
