@@ -54,7 +54,7 @@ const packages = [
     includes: ['Pre-soak', 'Hand wash', 'Rinse', 'Wax', 'Hand dry'],
   },
   {
-    title: 'Premium Exterior Detail',
+    title: 'Exterior Detail',
     price: '$100',
     description:
       'A more complete exterior package with extra attention to shine and finishing touches.',
@@ -69,7 +69,7 @@ const packages = [
     ],
   },
   {
-    title: 'Full Detail',
+    title: 'The Full Detail',
     price: '$400',
     description:
       'The complete inside-and-out package for a full vehicle refresh.',
