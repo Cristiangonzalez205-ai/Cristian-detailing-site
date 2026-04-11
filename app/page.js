@@ -152,7 +152,7 @@ export default function HomePage() {
         href={`/booking?package=${encodeURIComponent(pkg.title)}`}
         className="button primary"
       >
-        Book This Package
+        Book
       </Link>
     </div>
   </article>
