@@ -135,19 +135,28 @@ export default function HomePage() {
         <h2>Packages</h2>
         <div className="packages-grid">
           {packages.map((pkg) => (
-            <article key={pkg.title} className="card">
-              <div className="card-top">
-                <h3>{pkg.title}</h3>
-                <p className="price">{pkg.price}</p>
-              </div>
-              <p className="card-description">{pkg.description}</p>
-              <ul>
-                {pkg.includes.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
-          ))}
+  <article key={pkg.title} className="card">
+    <div className="card-top">
+      <h3>{pkg.title}</h3>
+      <p className="price">{pkg.price}</p>
+    </div>
+    <p className="card-description">{pkg.description}</p>
+    <ul>
+      {pkg.includes.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+
+    <div style={{ marginTop: '16px' }}>
+      <Link
+        href={`/booking?package=${encodeURIComponent(pkg.title)}`}
+        className="button primary"
+      >
+        Book This Package
+      </Link>
+    </div>
+  </article>
+))}
         </div>
         <p className="pricing-note">
           Final pricing may vary depending on vehicle size, condition, and level
