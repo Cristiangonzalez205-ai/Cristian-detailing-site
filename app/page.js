@@ -93,18 +93,17 @@ export default function HomePage() {
     <main className="page">
       <section className="hero">
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
-        <h1>Cristian Gonzalez Detailing</h1>
-        <p className="hero-text">
-          Hi, I’m Cristian Gonzalez, and I run a mobile car detailing business
-          serving Berkeley. I believe a car is more than just transportation —
-          it reflects the way we live and take care of what matters to us. I
-          treat every vehicle with care, discipline, and attention to detail,
-          whether it needs a quick refresh or a deep clean.
-        </p>
-        <p className="hero-text">
-          My goal is to leave every car looking cleaner, feeling fresher, and
-          cared for with pride.
-        </p>
+<h1>Cristian Gonzalez Detailing</h1>
+<p className="hero-text">
+  Hi, I’m Cristian Gonzalez, and I run a mobile car detailing business serving
+  Berkeley. I believe a car is more than just transportation — it reflects the
+  way we live and care for what matters to us.
+</p>
+<p className="hero-text">
+  I treat every vehicle with patience, discipline, and attention to detail,
+  whether it needs a quick refresh or a deep clean. My goal is to leave every
+  car looking cleaner, feeling fresher, and cared for with pride.
+</p>
 
         <div className="hero-buttons">
           <Link href="/booking" className="button primary">
@@ -181,6 +180,21 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+      <section className="section">
+  <h2>Contact</h2>
+  <p className="hero-text">
+    For questions, custom quotes, or specialty services, call or text me
+    directly. For standard appointments, please use the booking page first.
+  </p>
+  <div className="hero-buttons">
+    <a href="tel:5595523442" className="button primary">
+      Call Now
+    </a>
+    <a href="sms:5595523442" className="button secondary">
+      Text Me
+    </a>
+  </div>
+</section>
     </main>
   )
 }
