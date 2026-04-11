@@ -1,7 +1,3 @@
-'use client'
-
-import { useSearchParams } from 'next/navigation'
-
 const bookingLinks = {
   'Interior Refresh':
     'https://calendly.com/cristian_gonzalez-berkeley/interior-refresh',
@@ -19,9 +15,9 @@ const bookingLinks = {
     'https://calendly.com/cristian_gonzalez-berkeley/the-full-detail',
 }
 
-export default function BookingPage() {
-  const searchParams = useSearchParams()
-  const selectedPackage = searchParams.get('package') || ''
+export default async function BookingPage({ searchParams }) {
+  const params = await searchParams
+  const selectedPackage = params?.package || ''
   const bookingLink = bookingLinks[selectedPackage]
 
   return (
