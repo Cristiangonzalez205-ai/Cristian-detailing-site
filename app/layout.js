@@ -2,7 +2,7 @@ import Link from 'next/link'
 import './globals.css'
 
 export const metadata = {
-  title: 'Cristian Gonzalez Detailing',
+  title: 'ChrisDoesDetails',
   description: 'Mobile car detailing in Berkeley',
 }
 
@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <header className="site-header">
           <div className="nav-inner">
             <Link href="/" className="brand">
-              Cristian Gonzalez Detailing
+              ChrisDoesDetails
             </Link>
 
             <nav className="nav-links">

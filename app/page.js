@@ -95,12 +95,12 @@ export default function HomePage() {
         <div className="logo-placeholder">
   <img
     src="/cars/logo.jpeg"
-    alt="Cristian Gonzalez Detailing logo"
+    alt="ChrisDoesDetails logo"
     className="logo-placeholder-image"
   />
 </div>
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
-<h1>Cristian Gonzalez Detailing</h1>
+<h1>ChrisDoesDetails</h1>
 <p className="hero-text">
   Hi, I’m Cristian Gonzalez, and I run a mobile car detailing business serving
   Berkeley. I believe a car is more than just transportation — it reflects the
