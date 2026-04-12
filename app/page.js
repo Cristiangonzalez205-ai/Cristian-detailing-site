@@ -92,6 +92,13 @@ export default function HomePage() {
   return (
     <main className="page">
       <section className="hero">
+        <div className="logo-placeholder">
+  <img
+    src="/cars/logo.jpeg"
+    alt="Cristian Gonzalez Detailing logo"
+    className="logo-placeholder-image"
+  />
+</div>
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
 <h1>Cristian Gonzalez Detailing</h1>
 <p className="hero-text">
@@ -115,6 +122,13 @@ export default function HomePage() {
         </div>
       </section>
       <section className="section">
+<div className="owner-placeholder">
+  <img
+    src="/cars/owner-photo.jpeg"
+    alt="Cristian Gonzalez"
+    className="owner-placeholder-image"
+  />
+</div>
   <h2>Why Choose Me</h2>
   <p className="hero-text">
     I’m a Berkeley student from Fresno, California, and I’m no stranger to hard

@@ -170,3 +170,38 @@ h2 {
   padding: 24px 20px 40px;
   color: #b8c1cc;
 }
+.logo-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #2a3342;
+  background: transparent;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-placeholder-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.owner-placeholder {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #2a3342;
+  background: #161b22;
+  margin-bottom: 20px;
+}
+
+.owner-placeholder-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
