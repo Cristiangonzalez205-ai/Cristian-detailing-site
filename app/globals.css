@@ -170,6 +170,7 @@ h2 {
   padding: 24px 20px 40px;
   color: #b8c1cc;
 }
+
 .logo-placeholder {
   width: 110px;
   height: 110px;
@@ -190,21 +191,6 @@ h2 {
   display: block;
 }
 
-.owner-placeholder {
-  width: 100%;
-  max-width: 260px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid #2a3342;
-  background: #161b22;
-  margin-bottom: 20px;
-}
-
-.owner-placeholder-image {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
 .why-choose-me {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -230,70 +216,6 @@ h2 {
   width: 100%;
   display: block;
   object-fit: cover;
-}
-
-@media (max-width: 800px) {
-  .why-choose-me {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-
-  .owner-placeholder {
-    max-width: 260px;
-    margin: 0 auto 6px;
-  }
-  .why-choose-copy h2 {
-  text-align: center;
-  margin-bottom: 14px;
-  }
-  @media (max-width: 800px) {
-  .service-tags {
-    gap: 8px;
-  }
-
-  .service-tags span {
-    padding: 8px 10px;
-    font-size: 0.9rem;
-  }
-
-  .packages-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .card {
-    padding: 16px;
-  }
-
-  h2 {
-    margin-bottom: 14px;
-  }
-}
-.page {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 20px 64px;
-}
-
-.hero {
-  padding: 20px 0 28px;
-}
-
-.section {
-  padding: 28px 0;
-}
-
-.logo-placeholder {
-  width: 110px;
-  height: 110px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid #2a3342;
-  background: transparent;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 800px) {
