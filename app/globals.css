@@ -295,13 +295,22 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
-.icon-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+.contact-icon-row {
+  gap: 10px;
 }
 
-.button-icon {
-  font-size: 1rem;
-  line-height: 1;
+.icon-only-button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
