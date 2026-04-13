@@ -47,11 +47,11 @@ a {
 .page {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 32px 20px 64px;
+  padding: 20px 20px 64px;
 }
 
 .hero {
-  padding: 48px 0 32px;
+  padding: 20px 0 28px;
 }
 
 .eyebrow {
@@ -104,7 +104,7 @@ h2 {
 }
 
 .section {
-  padding: 36px 0;
+  padding: 28px 0;
 }
 
 .service-tags {
@@ -177,7 +177,7 @@ h2 {
   overflow: hidden;
   border: 1px solid #2a3342;
   background: transparent;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,5 +240,97 @@ h2 {
 
   .owner-placeholder {
     max-width: 260px;
+    margin: 0 auto 6px;
+  }
+  .why-choose-copy h2 {
+  text-align: center;
+  margin-bottom: 14px;
+  }
+  @media (max-width: 800px) {
+  .service-tags {
+    gap: 8px;
+  }
+
+  .service-tags span {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  h2 {
+    margin-bottom: 14px;
+  }
+}
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 20px 64px;
+}
+
+.hero {
+  padding: 20px 0 28px;
+}
+
+.section {
+  padding: 28px 0;
+}
+
+.logo-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #2a3342;
+  background: transparent;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .why-choose-me {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .owner-placeholder {
+    max-width: 260px;
+    margin: 0 auto 6px;
+  }
+
+  .why-choose-copy h2 {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .service-tags {
+    gap: 8px;
+  }
+
+  .service-tags span {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  h2 {
+    margin-bottom: 14px;
   }
 }
