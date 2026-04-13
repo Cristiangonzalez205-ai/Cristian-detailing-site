@@ -232,12 +232,29 @@ export default function HomePage() {
     For questions, custom quotes, or specialty services, call or text me
     directly. For standard appointments, please use the booking page first.
   </p>
+  <p className="hero-text">
+    You can also see more of my work on Instagram: <strong>@ChrisDoesDetails</strong>
+  </p>
+
   <div className="hero-buttons">
-    <a href="tel:5595523442" className="button primary">
-      Call Now
+    <a href="tel:5595523442" className="button primary icon-button">
+      <span className="button-icon">📞</span>
+      <span>Call</span>
     </a>
-    <a href="sms:5595523442" className="button secondary">
-      Text Me
+
+    <a href="sms:5595523442" className="button secondary icon-button">
+      <span className="button-icon">💬</span>
+      <span>Text</span>
+    </a>
+
+    <a
+      href="https://instagram.com/ChrisDoesDetails"
+      className="button secondary icon-button"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <span className="button-icon">📸</span>
+      <span>Instagram</span>
     </a>
   </div>
 </section>

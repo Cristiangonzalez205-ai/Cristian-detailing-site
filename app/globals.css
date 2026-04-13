@@ -295,3 +295,13 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
