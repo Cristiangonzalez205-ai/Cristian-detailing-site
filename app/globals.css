@@ -256,3 +256,42 @@ h2 {
     margin-bottom: 14px;
   }
 }
+.booking-hero {
+  padding-top: 10px;
+}
+
+.booking-selected-card {
+  background: #161b22;
+  border: 1px solid #2a3342;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.selected-label {
+  color: #8fb7ff;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.85rem;
+}
+
+.booking-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.booking-note-card {
+  margin-bottom: 18px;
+}
+
+@media (max-width: 800px) {
+  .booking-selected-card {
+    padding: 18px;
+  }
+
+  .booking-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
