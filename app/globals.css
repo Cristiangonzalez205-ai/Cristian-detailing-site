@@ -205,3 +205,40 @@ h2 {
   display: block;
   object-fit: cover;
 }
+.why-choose-me {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.why-choose-copy {
+  min-width: 0;
+}
+
+.owner-placeholder {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #2a3342;
+  background: #161b22;
+  margin-bottom: 0;
+}
+
+.owner-placeholder-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .why-choose-me {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .owner-placeholder {
+    max-width: 260px;
+  }
+}

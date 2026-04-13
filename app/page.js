@@ -122,29 +122,34 @@ export default function HomePage() {
         </div>
       </section>
       <section className="section">
-<div className="owner-placeholder">
-  <img
-    src="/cars/owner-photo.jpeg"
-    alt="Cristian Gonzalez"
-    className="owner-placeholder-image"
-  />
-</div>
-  <h2>Why Choose Me</h2>
-  <p className="hero-text">
-    I’m a Berkeley student from Fresno, California, and I’m no stranger to hard
-    work. I worked two jobs during my junior and senior years of high school,
-    earned a biomedical department award, and completed over 100 hours of
-    volunteering in sports medicine. Getting into UC Berkeley’s College of
-    Chemistry, one of the hardest colleges in the nation, showed me that
-    dedication and discipline can take you far.
-  </p>
-  <p className="hero-text">
-    I try to live my life with that same dedication and discipline every day,
-    and I bring that same energy to the cars I work on. When I detail a car, I
-    want it to reflect care, pride, and attention to detail. I treat every
-    vehicle with respect and work hard to leave it looking cleaner, fresher,
-    and shining the way it should.
-  </p>
+  <div className="why-choose-me">
+    <div className="owner-placeholder">
+      <img
+        src="/cars/owner-photo.jpeg"
+        alt="ChrisDoesDetails owner"
+        className="owner-placeholder-image"
+      />
+    </div>
+
+    <div className="why-choose-copy">
+      <h2>Why Choose Me</h2>
+      <p className="hero-text">
+        I’m a Berkeley student from Fresno, California, and I’m no stranger to hard
+        work. I worked two jobs during my junior and senior years of high school,
+        earned a biomedical department award, and completed over 100 hours of
+        volunteering in sports medicine. Getting into UC Berkeley’s College of
+        Chemistry, one of the hardest colleges in the nation, showed me that
+        dedication and discipline can take you far.
+      </p>
+      <p className="hero-text">
+        I try to live my life with that same dedication and discipline every day,
+        and I bring that same energy to the cars I work on. When I detail a car, I
+        want it to reflect care, pride, and attention to detail. I treat every
+        vehicle with respect and work hard to leave it looking cleaner, fresher,
+        and shining the way it should.
+      </p>
+    </div>
+  </div>
 </section>
 
       <section className="section">
