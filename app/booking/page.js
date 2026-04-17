@@ -60,18 +60,64 @@ export default async function BookingPage({ searchParams }) {
             )}
           </div>
         </section>
-      ) : (
+            ) : (
         <section className="section">
           <div className="booking-selected-card">
-            <p className="selected-label">No Package Selected</p>
-            <h2>Choose a package first</h2>
+            <p className="selected-label">Choose a Package</p>
+            <h2>Select your detail service</h2>
             <p className="hero-text">
-              Go back to the homepage, pick the package that fits your car, and
-              then return here to book it.
+              Pick the package that best matches your vehicle, then continue to
+              booking to choose an available time.
             </p>
-            <div className="hero-buttons">
-              <a href="/" className="button secondary">
-                Back to Homepage
+
+            <div className="booking-package-grid">
+              <a href="/booking?package=Interior%20Refresh" className="card booking-package-option">
+                <h3>Interior Refresh</h3>
+                <p className="card-description">
+                  A light interior reset for a quick clean and refresh.
+                </p>
+              </a>
+
+              <a href="/booking?package=Deep%20Interior%20Clean" className="card booking-package-option">
+                <h3>Deep Interior Clean</h3>
+                <p className="card-description">
+                  A more thorough interior detail with deeper cleaning and extra attention.
+                </p>
+              </a>
+
+              <a href="/booking?package=Complete%20Interior%20Reset" className="card booking-package-option">
+                <h3>Complete Interior Reset</h3>
+                <p className="card-description">
+                  A full interior reset for heavier buildup and deeper care.
+                </p>
+              </a>
+
+              <a href="/booking?package=Exterior%20Wash" className="card booking-package-option">
+                <h3>Exterior Wash</h3>
+                <p className="card-description">
+                  A clean and simple exterior wash for a refreshed finish.
+                </p>
+              </a>
+
+              <a href="/booking?package=Exterior%20Wash%20Plus" className="card booking-package-option">
+                <h3>Exterior Wash Plus</h3>
+                <p className="card-description">
+                  An upgraded wash with added shine and protection.
+                </p>
+              </a>
+
+              <a href="/booking?package=Exterior%20Detail" className="card booking-package-option">
+                <h3>Exterior Detail</h3>
+                <p className="card-description">
+                  A more complete exterior service with extra attention to finish and detail.
+                </p>
+              </a>
+
+              <a href="/booking?package=The%20Full%20Detail" className="card booking-package-option">
+                <h3>The Full Detail</h3>
+                <p className="card-description">
+                  The complete inside-and-out package for a full vehicle reset.
+                </p>
               </a>
             </div>
           </div>

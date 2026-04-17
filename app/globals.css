@@ -330,3 +330,30 @@ h2 {
   height: 20px;
   display: block;
 }
+.booking-package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.booking-package-option {
+  text-decoration: none;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.booking-package-option:hover {
+  transform: translateY(-2px);
+  border-color: #4f8cff;
+}
+
+.booking-package-option h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .booking-package-grid {
+    grid-template-columns: 1fr;
+  }
+}
