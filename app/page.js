@@ -92,13 +92,6 @@ export default function HomePage() {
   return (
     <main className="page">
       <section className="hero">
-        <div className="logo-placeholder">
-  <img
-    src="/cars/logo.jpeg"
-    alt="ChrisDoesDetails logo"
-    className="logo-placeholder-image"
-  />
-</div>
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
 <h1>ChrisDoesDetails</h1>
 <p className="hero-text">
