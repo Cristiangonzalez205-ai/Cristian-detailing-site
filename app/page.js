@@ -73,7 +73,7 @@ const packages = [
     price: '$400',
     description:
       'The complete inside-and-out package for a full vehicle refresh.',
-    includes: ['Complete Interior Reset', 'Premium Exterior Detail'],
+    includes: ['Complete Interior Reset', 'Exterior Detail'],
   },
 ]
 
@@ -95,15 +95,9 @@ export default function HomePage() {
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
         <h1>ChrisDoesDetails</h1>
         <p className="hero-text">
-          Hi, I’m Cristian Gonzalez, and I run a mobile car detailing business serving
-          Berkeley. I believe a car is more than just transportation — it reflects the
-          way we live and care for what matters to us.
-        </p>
-        <p className="hero-text">
-          I treat every vehicle with patience, discipline, and attention to detail,
-          whether it needs a quick refresh or a deep clean. My goal is to leave every
-          car looking cleaner, feeling fresher, and cared for with pride.
-        </p>
+  Mobile car detailing in Berkeley with care, discipline, and attention to
+  detail — from quick refreshes to full resets.
+</p>
 
         <div className="hero-buttons">
           <Link href="/booking" className="button primary">
