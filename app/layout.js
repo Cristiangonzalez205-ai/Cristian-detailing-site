@@ -12,9 +12,14 @@ export default function RootLayout({ children }) {
       <body>
         <header className="site-header">
           <div className="nav-inner">
-            <Link href="/" className="brand">
-              ChrisDoesDetails
-            </Link>
+            <Link href="/" className="brand brand-with-logo">
+  <img
+    src="/cars/logo.jpeg"
+    alt="ChrisDoesDetails logo"
+    className="nav-logo"
+  />
+  <span>ChrisDoesDetails</span>
+</Link>
 
             <nav className="nav-links">
               <Link href="/">Home</Link>

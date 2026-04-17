@@ -37,7 +37,19 @@ a {
 .brand {
   font-weight: 700;
 }
+.brand-with-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.nav-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
+}
 .nav-links {
   display: flex;
   gap: 16px;
@@ -223,6 +235,10 @@ h2 {
     grid-template-columns: 1fr;
     gap: 18px;
   }
+  .nav-logo {
+  width: 30px;
+  height: 30px;
+}
 
   .owner-placeholder {
     max-width: 260px;
