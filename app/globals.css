@@ -357,3 +357,35 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.booking-selected-premium {
+  padding: 28px;
+}
+
+.booking-meta-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 14px 0 14px;
+}
+
+.booking-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #171c24;
+  border: 1px solid #2a3342;
+  color: #f5f7fb;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.booking-summary-text {
+  margin-bottom: 12px;
+}
+
+@media (max-width: 800px) {
+  .booking-selected-premium {
+    padding: 20px;
+  }
+}

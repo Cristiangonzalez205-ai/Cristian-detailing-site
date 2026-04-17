@@ -15,10 +15,56 @@ const bookingLinks = {
     'https://calendly.com/cristian_gonzalez-berkeley/the-full-detail',
 }
 
+const packageDetails = {
+  'Interior Refresh': {
+    price: '$60',
+    duration: '1.5 hours',
+    summary:
+      'A light interior reset for a quick clean, freshen-up, and simple touch of care.',
+  },
+  'Deep Interior Clean': {
+    price: '$140',
+    duration: '2 hours',
+    summary:
+      'A more thorough interior detail with deeper cleaning and extra attention to buildup.',
+  },
+  'Complete Interior Reset': {
+    price: '$200',
+    duration: '3 hours',
+    summary:
+      'A full interior reset for vehicles that need deeper care and more detailed attention.',
+  },
+  'Exterior Wash': {
+    price: '$60',
+    duration: '1 hour',
+    summary:
+      'A clean and simple exterior wash for a refreshed finish and sharper overall look.',
+  },
+  'Exterior Wash Plus': {
+    price: '$80',
+    duration: '1.5 hours',
+    summary:
+      'An upgraded exterior wash with added shine and protection for a cleaner finish.',
+  },
+  'Exterior Detail': {
+    price: '$100',
+    duration: '2 hours',
+    summary:
+      'A more complete exterior service with extra attention to shine, finish, and overall detail.',
+  },
+  'The Full Detail': {
+    price: '$400',
+    duration: '6 hours',
+    summary:
+      'The complete inside-and-out package for a full vehicle reset with deeper interior care and a more complete exterior detail.',
+  },
+}
+
 export default async function BookingPage({ searchParams }) {
   const params = await searchParams
   const selectedPackage = params?.package || ''
   const bookingLink = bookingLinks[selectedPackage]
+  const details = packageDetails[selectedPackage]
 
   return (
     <main className="page">
@@ -34,12 +80,23 @@ export default async function BookingPage({ searchParams }) {
 
       {selectedPackage ? (
         <section className="section">
-          <div className="booking-selected-card">
+          <div className="booking-selected-card booking-selected-premium">
             <p className="selected-label">Selected Package</p>
             <h2>{selectedPackage}</h2>
+
+            {details ? (
+              <>
+                <div className="booking-meta-row">
+                  <span className="booking-meta-pill">{details.price}</span>
+                  <span className="booking-meta-pill">{details.duration}</span>
+                </div>
+
+                <p className="hero-text booking-summary-text">{details.summary}</p>
+              </>
+            ) : null}
+
             <p className="hero-text">
-              You selected <strong>{selectedPackage}</strong>. Continue below to
-              choose an available time through Calendly.
+              Continue below to choose an available time through Calendly.
             </p>
 
             {bookingLink ? (
@@ -60,7 +117,7 @@ export default async function BookingPage({ searchParams }) {
             )}
           </div>
         </section>
-            ) : (
+      ) : (
         <section className="section">
           <div className="booking-selected-card">
             <p className="selected-label">Choose a Package</p>
@@ -143,44 +200,44 @@ export default async function BookingPage({ searchParams }) {
               specialty work are available by custom quote.
             </p>
             <div className="hero-buttons contact-icon-row">
-  <a
-    href="tel:5595523442"
-    className="button secondary icon-only-button"
-    aria-label="Call ChrisDoesDetails"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="contact-icon"
-    >
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.45-1.24a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z" />
-    </svg>
-  </a>
+              <a
+                href="tel:5595523442"
+                className="button secondary icon-only-button"
+                aria-label="Call ChrisDoesDetails"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-icon"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.45-1.24a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
 
-  <a
-    href="sms:5595523442"
-    className="button secondary icon-only-button"
-    aria-label="Text ChrisDoesDetails"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="contact-icon"
-    >
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-    </svg>
-  </a>
-</div>
+              <a
+                href="sms:5595523442"
+                className="button secondary icon-only-button"
+                aria-label="Text ChrisDoesDetails"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-icon"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -192,29 +249,29 @@ export default async function BookingPage({ searchParams }) {
             You can also check out my work and updates on Instagram.
           </p>
           <div className="hero-buttons contact-icon-row">
-  <a
-    href="https://instagram.com/ChrisDoesDetails"
-    className="button secondary icon-only-button"
-    target="_blank"
-    rel="noreferrer"
-    aria-label="Visit ChrisDoesDetails Instagram"
-  >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="contact-icon"
-    >
-      <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  </a>
-</div>
+            <a
+              href="https://instagram.com/ChrisDoesDetails"
+              className="button secondary icon-only-button"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit ChrisDoesDetails Instagram"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="contact-icon"
+              >
+                <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <p className="pricing-note">
