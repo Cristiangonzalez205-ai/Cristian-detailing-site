@@ -449,3 +449,33 @@ h2 {
     margin-bottom: 14px;
   }
 }
+.hero-credibility-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.credibility-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #171c24;
+  border: 1px solid #2a3342;
+  color: #f5f7fb;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .hero-credibility-strip {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .credibility-pill {
+    padding: 8px 12px;
+    font-size: 0.88rem;
+  }
+}

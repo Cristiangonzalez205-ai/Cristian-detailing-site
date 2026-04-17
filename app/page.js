@@ -4,7 +4,7 @@ import { packages, specialtyServices } from './data/packages'
 export default function HomePage() {
   return (
     <main className="page">
-      <section className="hero">
+            <section className="hero">
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
         <h1>ChrisDoesDetails</h1>
         <p className="hero-text">
@@ -19,6 +19,13 @@ export default function HomePage() {
           <Link href="/gallery" className="button secondary">
             View My Work
           </Link>
+        </div>
+
+        <div className="hero-credibility-strip">
+          <div className="credibility-pill">Student-Owned</div>
+          <div className="credibility-pill">Mobile Service</div>
+          <div className="credibility-pill">Berkeley Based</div>
+          <div className="credibility-pill">Custom Quotes Available</div>
         </div>
       </section>
 
