@@ -1,92 +1,5 @@
 import Link from 'next/link'
-
-const packages = [
-  {
-    title: 'Interior Refresh',
-    price: '$60',
-    description:
-      'A solid reset for lightly used interiors with standard vacuuming, minor spot cleaning, and a fresh scent finish.',
-    includes: [
-      'Standard vacuuming',
-      'Minor spot cleaning',
-      'Surface wipe-down',
-      'Fresh scent finish',
-    ],
-  },
-  {
-    title: 'Deep Interior Clean',
-    price: '$140',
-    description:
-      'A more thorough interior detail with deeper cleaning for dust, buildup, and everyday mess.',
-    includes: [
-      'Full vacuuming',
-      'Steam cleaning',
-      'Air vent cleaning',
-      'Interior wipe-down',
-      'Fresh scent finish',
-    ],
-  },
-  {
-    title: 'Complete Interior Reset',
-    price: '$200',
-    description:
-      'For interiors that need the deepest level of care, including upholstery attention and heavier buildup.',
-    includes: [
-      'Full vacuuming',
-      'Steam cleaning',
-      'Upholstery cleaning',
-      'Deeper stain attention',
-      'Fresh scent finish',
-    ],
-  },
-  {
-    title: 'Exterior Wash',
-    price: '$60',
-    description:
-      'A clean and simple exterior service for a refreshed finish.',
-    includes: ['Hand wash', 'Rinse', 'Hand dry'],
-  },
-  {
-    title: 'Exterior Wash Plus',
-    price: '$80',
-    description:
-      'Adds extra shine and protection with a pre-soak and wax finish.',
-    includes: ['Pre-soak', 'Hand wash', 'Rinse', 'Wax', 'Hand dry'],
-  },
-  {
-    title: 'Exterior Detail',
-    price: '$100',
-    description:
-      'A more complete exterior package with extra attention to shine and finishing touches.',
-    includes: [
-      'Tire shine',
-      'Pre-soak',
-      'Hand wash',
-      'Rinse',
-      'Wax',
-      'Hand dry',
-      'Trim restoration',
-    ],
-  },
-  {
-    title: 'The Full Detail',
-    price: '$400',
-    description:
-      'The complete inside-and-out package for a full vehicle refresh.',
-    includes: ['Complete Interior Reset', 'Exterior Detail'],
-  },
-]
-
-const specialtyServices = [
-  'Upholstery cleaning',
-  'Steam cleaning',
-  'Fresh scent finish',
-  'Tire shine',
-  'Light scratch removal by request',
-  'Paint correction',
-  'Polish and wax',
-  'Ceramic coating',
-]
+import { packages, specialtyServices } from './data/packages'
 
 export default function HomePage() {
   return (
@@ -95,9 +8,9 @@ export default function HomePage() {
         <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
         <h1>ChrisDoesDetails</h1>
         <p className="hero-text">
-  Mobile car detailing in Berkeley with care, discipline, and attention to
-  detail — from quick refreshes to full resets.
-</p>
+          Mobile car detailing in Berkeley with care, discipline, and attention
+          to detail — from quick refreshes to full resets.
+        </p>
 
         <div className="hero-buttons">
           <Link href="/booking" className="button primary">
@@ -159,6 +72,7 @@ export default function HomePage() {
           request.
         </p>
       </section>
+
       <section className="section">
         <div className="why-choose-me">
           <div className="owner-placeholder">
@@ -172,19 +86,21 @@ export default function HomePage() {
           <div className="why-choose-copy">
             <h2>Why Choose Me</h2>
             <p className="hero-text">
-              I’m a Berkeley student from Fresno, California, and I’m no stranger to hard
-              work. I worked two jobs during my junior and senior years of high school,
-              earned a biomedical department award, and completed over 100 hours of
-              volunteering in sports medicine. Getting into UC Berkeley’s College of
-              Chemistry, one of the hardest colleges in the nation, showed me that
-              dedication and discipline can take you far.
+              I’m a Berkeley student from Fresno, California, and I’m no
+              stranger to hard work. I worked two jobs during my junior and
+              senior years of high school, earned a biomedical department award,
+              and completed over 100 hours of volunteering in sports medicine.
+              Getting into UC Berkeley’s College of Chemistry, one of the
+              hardest colleges in the nation, showed me that dedication and
+              discipline can take you far.
             </p>
             <p className="hero-text">
-              I try to live my life with that same dedication and discipline every day,
-              and I bring that same energy to the cars I work on. When I detail a car, I
-              want it to reflect care, pride, and attention to detail. I treat every
-              vehicle with respect and work hard to leave it looking cleaner, fresher,
-              and shining the way it should.
+              I try to live my life with that same dedication and discipline
+              every day, and I bring that same energy to the cars I work on.
+              When I detail a car, I want it to reflect care, pride, and
+              attention to detail. I treat every vehicle with respect and work
+              hard to leave it looking cleaner, fresher, and shining the way it
+              should.
             </p>
           </div>
         </div>
@@ -201,9 +117,7 @@ export default function HomePage() {
 
       <section className="section cta">
         <h2>Ready for a clean reset?</h2>
-        <p>
-          Book a detail, check availability, and bring your car back to life.
-        </p>
+        <p>Book a detail, check availability, and bring your car back to life.</p>
         <div className="hero-buttons">
           <Link href="/booking" className="button primary">
             Schedule a Detail
@@ -213,6 +127,7 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+
       <section className="section">
         <h2>Contact</h2>
         <p className="hero-text">
@@ -220,7 +135,8 @@ export default function HomePage() {
           directly. For standard appointments, please use the booking page first.
         </p>
         <p className="hero-text">
-          You can also see more of my work on Instagram: <strong>@ChrisDoesDetails</strong>
+          You can also see more of my work on Instagram:{' '}
+          <strong>@ChrisDoesDetails</strong>
         </p>
 
         <div className="hero-buttons contact-icon-row">

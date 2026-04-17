@@ -1,3 +1,5 @@
+import { packages } from '../data/packages'
+
 const bookingLinks = {
   'Interior Refresh':
     'https://calendly.com/cristian_gonzalez-berkeley/interior-refresh',
@@ -15,56 +17,11 @@ const bookingLinks = {
     'https://calendly.com/cristian_gonzalez-berkeley/the-full-detail',
 }
 
-const packageDetails = {
-  'Interior Refresh': {
-    price: '$60',
-    duration: '1.5 hours',
-    summary:
-      'A light interior reset for a quick clean, freshen-up, and simple touch of care.',
-  },
-  'Deep Interior Clean': {
-    price: '$140',
-    duration: '2 hours',
-    summary:
-      'A more thorough interior detail with deeper cleaning and extra attention to buildup.',
-  },
-  'Complete Interior Reset': {
-    price: '$200',
-    duration: '3 hours',
-    summary:
-      'A full interior reset for vehicles that need deeper care and more detailed attention.',
-  },
-  'Exterior Wash': {
-    price: '$60',
-    duration: '1 hour',
-    summary:
-      'A clean and simple exterior wash for a refreshed finish and sharper overall look.',
-  },
-  'Exterior Wash Plus': {
-    price: '$80',
-    duration: '1.5 hours',
-    summary:
-      'An upgraded exterior wash with added shine and protection for a cleaner finish.',
-  },
-  'Exterior Detail': {
-    price: '$100',
-    duration: '2 hours',
-    summary:
-      'A more complete exterior service with extra attention to shine, finish, and overall detail.',
-  },
-  'The Full Detail': {
-    price: '$400',
-    duration: '6 hours',
-    summary:
-      'The complete inside-and-out package for a full vehicle reset with deeper interior care and a more complete exterior detail.',
-  },
-}
-
 export default async function BookingPage({ searchParams }) {
   const params = await searchParams
   const selectedPackage = params?.package || ''
   const bookingLink = bookingLinks[selectedPackage]
-  const details = packageDetails[selectedPackage]
+  const details = packages.find((pkg) => pkg.title === selectedPackage)
 
   return (
     <main className="page">
@@ -128,54 +85,16 @@ export default async function BookingPage({ searchParams }) {
             </p>
 
             <div className="booking-package-grid">
-              <a href="/booking?package=Interior%20Refresh" className="card booking-package-option">
-                <h3>Interior Refresh</h3>
-                <p className="card-description">
-                  A light interior reset for a quick clean and refresh.
-                </p>
-              </a>
-
-              <a href="/booking?package=Deep%20Interior%20Clean" className="card booking-package-option">
-                <h3>Deep Interior Clean</h3>
-                <p className="card-description">
-                  A more thorough interior detail with deeper cleaning and extra attention.
-                </p>
-              </a>
-
-              <a href="/booking?package=Complete%20Interior%20Reset" className="card booking-package-option">
-                <h3>Complete Interior Reset</h3>
-                <p className="card-description">
-                  A full interior reset for heavier buildup and deeper care.
-                </p>
-              </a>
-
-              <a href="/booking?package=Exterior%20Wash" className="card booking-package-option">
-                <h3>Exterior Wash</h3>
-                <p className="card-description">
-                  A clean and simple exterior wash for a refreshed finish.
-                </p>
-              </a>
-
-              <a href="/booking?package=Exterior%20Wash%20Plus" className="card booking-package-option">
-                <h3>Exterior Wash Plus</h3>
-                <p className="card-description">
-                  An upgraded wash with added shine and protection.
-                </p>
-              </a>
-
-              <a href="/booking?package=Exterior%20Detail" className="card booking-package-option">
-                <h3>Exterior Detail</h3>
-                <p className="card-description">
-                  A more complete exterior service with extra attention to finish and detail.
-                </p>
-              </a>
-
-              <a href="/booking?package=The%20Full%20Detail" className="card booking-package-option">
-                <h3>The Full Detail</h3>
-                <p className="card-description">
-                  The complete inside-and-out package for a full vehicle reset.
-                </p>
-              </a>
+              {packages.map((pkg) => (
+                <a
+                  key={pkg.title}
+                  href={`/booking?package=${encodeURIComponent(pkg.title)}`}
+                  className="card booking-package-option"
+                >
+                  <h3>{pkg.title}</h3>
+                  <p className="card-description">{pkg.summary}</p>
+                </a>
+              ))}
             </div>
           </div>
         </section>
