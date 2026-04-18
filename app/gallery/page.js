@@ -4,14 +4,34 @@ import { siteConfig } from '../data/site'
 export default function GalleryPage() {
   return (
     <main className="page">
-      <section className="section gallery-hero">
-        <p className="eyebrow">{siteConfig.brandName} Gallery</p>
-        <h1>Recent Work</h1>
-        <p className="hero-text">
-          A look at some of the vehicles I’ve cleaned and detailed. From quick
-          refreshes to full resets, every job gets care, patience, and attention
-          to detail.
-        </p>
+            <section className="section gallery-hero gallery-hero-premium">
+        <div className="gallery-hero-main">
+          <p className="eyebrow">{siteConfig.brandName} Gallery</p>
+          <h1>Recent Work</h1>
+          <p className="hero-text gallery-hero-lead">
+            A look at some of the vehicles I’ve cleaned and detailed. From quick
+            refreshes to full resets, every job gets care, patience, and attention
+            to detail.
+          </p>
+        </div>
+
+        <div className="gallery-hero-side">
+          <p className="gallery-side-label">Portfolio Focus</p>
+          <div className="gallery-side-list">
+            <div className="gallery-side-item">
+              <span className="gallery-side-dot" />
+              <p>Interior, exterior, and full-detail work</p>
+            </div>
+            <div className="gallery-side-item">
+              <span className="gallery-side-dot" />
+              <p>Real vehicles cleaned and detailed by ChrisDoesDetails</p>
+            </div>
+            <div className="gallery-side-item">
+              <span className="gallery-side-dot" />
+              <p>More photos and stronger results will continue to be added</p>
+            </div>
+          </div>
+        </div>
       </section>
 
             <section className="section">
