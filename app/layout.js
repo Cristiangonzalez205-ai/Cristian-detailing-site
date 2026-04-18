@@ -32,6 +32,23 @@ export default function RootLayout({ children }) {
 
         {children}
 
+        <section className="site-trust-strip">
+          <div className="site-trust-inner">
+            <div className="site-trust-item">
+              <span className="site-trust-dot" />
+              <p>Student-owned mobile detailing in Berkeley</p>
+            </div>
+            <div className="site-trust-item">
+              <span className="site-trust-dot" />
+              <p>Package-based online booking</p>
+            </div>
+            <div className="site-trust-item">
+              <span className="site-trust-dot" />
+              <p>Custom quotes for specialty work</p>
+            </div>
+          </div>
+        </section>
+
         <footer className="site-footer premium-footer">
           <div className="footer-inner">
             <div className="footer-brand-block">

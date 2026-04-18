@@ -1087,3 +1087,46 @@ h2 {
     padding: 16px;
   }
 }
+.site-trust-strip {
+  border-top: 1px solid #232833;
+  border-bottom: 1px solid #232833;
+  background: #10141b;
+}
+
+.site-trust-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.site-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-trust-item p {
+  margin: 0;
+  color: #d1d7e0;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.site-trust-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #4f8cff;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 800px) {
+  .site-trust-inner {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 16px 20px;
+  }
+}
