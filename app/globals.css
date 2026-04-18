@@ -762,3 +762,40 @@ h2 {
     margin-top: 14px;
   }
 }
+.section-eyebrow {
+  margin-bottom: 8px;
+}
+
+.services-overview-header,
+.specialty-services-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+.services-overview-text,
+.specialty-services-text {
+  max-width: 520px;
+}
+
+.specialty-services-card {
+  background: linear-gradient(180deg, #161b22 0%, #12171f 100%);
+  border: 1px solid #2a3342;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+@media (max-width: 800px) {
+  .services-overview-header,
+  .specialty-services-header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .specialty-services-card {
+    padding: 18px;
+  }
+}

@@ -63,8 +63,19 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Services</h2>
+            <section className="section services-overview-section">
+        <div className="services-overview-header">
+          <div>
+            <p className="eyebrow section-eyebrow">Services</p>
+            <h2>Detailing built around what your car actually needs</h2>
+          </div>
+          <p className="hero-text services-overview-text">
+            From quick refreshes to deeper resets, ChrisDoesDetails offers
+            interior, exterior, and full-detail services with careful attention
+            to finish, presentation, and care.
+          </p>
+        </div>
+
         <div className="service-tags">
           <span>Interior cleaning</span>
           <span>Exterior wash</span>
@@ -151,12 +162,25 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Specialty Add-Ons</h2>
-        <div className="service-tags">
-          {specialtyServices.map((service) => (
-            <span key={service}>{service}</span>
-          ))}
+            <section className="section">
+        <div className="specialty-services-card">
+          <div className="specialty-services-header">
+            <div>
+              <p className="eyebrow section-eyebrow">Custom Services</p>
+              <h2>Specialty work available by custom quote</h2>
+            </div>
+            <p className="hero-text specialty-services-text">
+              For vehicles that need more specialized attention, custom services
+              are available depending on the condition of the car and the work
+              required.
+            </p>
+          </div>
+
+          <div className="service-tags">
+            {specialtyServices.map((service) => (
+              <span key={service}>{service}</span>
+            ))}
+          </div>
         </div>
       </section>
 
