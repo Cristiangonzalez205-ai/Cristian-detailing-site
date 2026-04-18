@@ -79,23 +79,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+            <section className="section">
         <h2>Packages</h2>
         <div className="packages-grid">
           {packages.map((pkg) => (
-            <article key={pkg.title} className="card">
-              <div className="card-top">
-                <h3>{pkg.title}</h3>
-                <p className="price">{pkg.price}</p>
-              </div>
-              <p className="card-description">{pkg.description}</p>
-              <ul>
-                {pkg.includes.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+            <article key={pkg.title} className="card package-card">
+              <div className="package-card-content">
+                <div className="card-top">
+                  <h3>{pkg.title}</h3>
+                  <p className="price">{pkg.price}</p>
+                </div>
 
-              <div style={{ marginTop: '16px' }}>
+                <p className="card-description">{pkg.description}</p>
+
+                <ul>
+                  {pkg.includes.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="package-card-footer">
                 <Link
                   href={`/booking?package=${encodeURIComponent(pkg.title)}`}
                   className="button primary"
