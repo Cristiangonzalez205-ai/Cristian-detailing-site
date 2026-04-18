@@ -104,17 +104,38 @@ h2 {
   padding: 12px 18px;
   border-radius: 10px;
   font-weight: 700;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.16s ease, box-shadow 0.16s ease,
+    background-color 0.16s ease, border-color 0.16s ease, color 0.16s ease;
 }
 
 .button.primary {
   background: #4f8cff;
   color: white;
+  box-shadow: 0 8px 20px rgba(79, 140, 255, 0.18);
+}
+
+.button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(79, 140, 255, 0.24);
 }
 
 .button.secondary {
   background: #1a2230;
   border: 1px solid #334155;
+}
+
+.button.secondary:hover {
+  transform: translateY(-2px);
+  border-color: #4f8cff;
+  background: #1d2635;
+}
+
+.button:focus-visible {
+  outline: 2px solid #8fb7ff;
+  outline-offset: 2px;
 }
 
 .section {
