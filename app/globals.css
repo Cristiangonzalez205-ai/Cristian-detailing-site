@@ -242,6 +242,11 @@ h2 {
 
 .pricing-note {
   margin-top: 18px;
+  max-width: 72ch;
+  padding-top: 14px;
+  border-top: 1px solid #232833;
+  color: #b8c1cc;
+  font-size: 0.96rem;
 }
 
 .cta {
@@ -1413,5 +1418,17 @@ h2 {
   .booking-note-premium h2,
   .booking-support-card h2 {
     max-width: 100%;
+  }
+}
+.booking-note-premium + .pricing-note,
+.booking-selected-card + .pricing-note {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .pricing-note {
+    max-width: 100%;
+    font-size: 0.93rem;
+    padding-top: 12px;
   }
 }
