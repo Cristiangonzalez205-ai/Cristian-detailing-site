@@ -1171,3 +1171,38 @@ h2 {
     padding: 16px 20px;
   }
 }
+.hero-cta-row {
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.hero-primary-button,
+.hero-secondary-button {
+  min-width: 150px;
+}
+
+.hero-primary-button {
+  padding: 13px 20px;
+}
+
+.hero-secondary-button {
+  padding: 13px 20px;
+  background: #161d29;
+}
+
+.hero-secondary-button:hover {
+  background: #1b2432;
+}
+
+@media (max-width: 800px) {
+  .hero-cta-row {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-primary-button,
+  .hero-secondary-button {
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+}

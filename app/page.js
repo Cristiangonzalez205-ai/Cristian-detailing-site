@@ -5,7 +5,7 @@ import { siteConfig } from './data/site'
 export default function HomePage() {
   return (
     <main className="page">
-            <section className="hero hero-premium">
+      <section className="hero hero-premium">
         <div className="hero-main">
           <p className="eyebrow">{siteConfig.locationLine}</p>
           <h1>{siteConfig.brandName}</h1>
@@ -14,14 +14,14 @@ export default function HomePage() {
             attention to detail — from quick refreshes to full resets.
           </p>
 
-          <div className="hero-buttons">
-            <Link href="/booking" className="button primary">
-              Book Now
-            </Link>
-            <Link href="/gallery" className="button secondary">
-              View My Work
-            </Link>
-          </div>
+                  <div className="hero-buttons hero-cta-row">
+          <Link href="/booking" className="button primary hero-primary-button">
+            Book Now
+          </Link>
+          <Link href="/gallery" className="button secondary hero-secondary-button">
+            View My Work
+          </Link>
+        </div>
 
           <div className="hero-credibility-strip">
             <div className="credibility-pill">Student-Owned</div>
@@ -63,7 +63,7 @@ export default function HomePage() {
         </div>
       </section>
 
-            <section className="section services-overview-section">
+      <section className="section services-overview-section">
         <div className="services-overview-header">
           <div>
             <p className="eyebrow section-eyebrow">Services</p>
@@ -90,7 +90,7 @@ export default function HomePage() {
         </div>
       </section>
 
-            <section className="section">
+      <section className="section">
         <h2>Packages</h2>
         <div className="packages-grid">
           {packages.map((pkg) => (
@@ -129,7 +129,7 @@ export default function HomePage() {
         </p>
       </section>
 
-            <section className="section section-divider why-choose-section">
+      <section className="section section-divider why-choose-section">
         <div className="why-choose-me">
           <div className="owner-placeholder">
             <img
@@ -163,7 +163,7 @@ export default function HomePage() {
         </div>
       </section>
 
-            <section className="section">
+      <section className="section">
         <div className="specialty-services-card">
           <div className="specialty-services-header">
             <div>
@@ -185,7 +185,7 @@ export default function HomePage() {
         </div>
       </section>
 
-            <section className="section section-divider">
+      <section className="section section-divider">
         <div className="cta cta-premium">
           <p className="eyebrow section-eyebrow">Get Started</p>
           <h2>Ready for a clean reset?</h2>
@@ -203,7 +203,7 @@ export default function HomePage() {
         </div>
       </section>
 
-            <section className="section section-divider">
+      <section className="section section-divider">
         <div className="contact-card-premium">
           <div className="contact-card-header">
             <div>
