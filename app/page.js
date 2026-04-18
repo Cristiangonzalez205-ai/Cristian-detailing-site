@@ -90,8 +90,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Packages</h2>
+            <section className="section section-divider">
+        <div className="packages-section-header">
+          <div>
+            <p className="eyebrow section-eyebrow">Packages</p>
+            <h2>Choose the detail that fits your car best</h2>
+          </div>
+          <p className="hero-text packages-section-text">
+            From quick refreshes to deeper resets, each package is built around
+            the level of cleaning, finish, and care your vehicle needs.
+          </p>
+        </div>
+
         <div className="packages-grid">
           {packages.map((pkg) => (
             <article key={pkg.title} className="card package-card">
