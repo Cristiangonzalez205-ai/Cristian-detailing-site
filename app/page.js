@@ -5,28 +5,61 @@ import { siteConfig } from './data/site'
 export default function HomePage() {
   return (
     <main className="page">
-      <section className="hero">
-        <p className="eyebrow">{siteConfig.locationLine}</p>
-        <h1>{siteConfig.brandName}</h1>
-        <p className="hero-text">
-          Mobile car detailing in Berkeley with care, discipline, and attention
-          to detail — from quick refreshes to full resets.
-        </p>
+            <section className="hero hero-premium">
+        <div className="hero-main">
+          <p className="eyebrow">{siteConfig.locationLine}</p>
+          <h1>{siteConfig.brandName}</h1>
+          <p className="hero-text hero-lead">
+            Mobile car detailing in Berkeley with care, discipline, and
+            attention to detail — from quick refreshes to full resets.
+          </p>
 
-        <div className="hero-buttons">
-          <Link href="/booking" className="button primary">
-            Book Now
-          </Link>
-          <Link href="/gallery" className="button secondary">
-            View My Work
-          </Link>
+          <div className="hero-buttons">
+            <Link href="/booking" className="button primary">
+              Book Now
+            </Link>
+            <Link href="/gallery" className="button secondary">
+              View My Work
+            </Link>
+          </div>
+
+          <div className="hero-credibility-strip">
+            <div className="credibility-pill">Student-Owned</div>
+            <div className="credibility-pill">Mobile Service</div>
+            <div className="credibility-pill">Berkeley Based</div>
+            <div className="credibility-pill">Custom Quotes Available</div>
+          </div>
         </div>
 
-        <div className="hero-credibility-strip">
-          <div className="credibility-pill">Student-Owned</div>
-          <div className="credibility-pill">Mobile Service</div>
-          <div className="credibility-pill">Berkeley Based</div>
-          <div className="credibility-pill">Custom Quotes Available</div>
+        <div className="hero-side-card">
+          <div className="hero-side-top">
+            <img
+              src="/cars/logo.jpeg"
+              alt={`${siteConfig.brandName} logo`}
+              className="hero-side-logo"
+            />
+            <div>
+              <p className="hero-side-label">Detailing Brand</p>
+              <h2 className="hero-side-title">{siteConfig.brandName}</h2>
+            </div>
+          </div>
+
+          <div className="hero-side-divider" />
+
+          <div className="hero-side-list">
+            <div className="hero-side-item">
+              <span className="hero-side-dot" />
+              <p>Interior, exterior, and full-detail packages</p>
+            </div>
+            <div className="hero-side-item">
+              <span className="hero-side-dot" />
+              <p>Easy online booking through package-based scheduling</p>
+            </div>
+            <div className="hero-side-item">
+              <span className="hero-side-dot" />
+              <p>Specialty services available by custom quote</p>
+            </div>
+          </div>
         </div>
       </section>
 
