@@ -9,7 +9,7 @@ export default async function BookingPage({ searchParams }) {
 
   return (
     <main className="page">
-            <section className="section booking-hero booking-hero-premium">
+      <section className="section booking-hero booking-hero-premium">
         <div className="booking-hero-main">
           <p className="eyebrow">{siteConfig.brandName} Booking</p>
           <h1>Book Your Detail</h1>
@@ -41,7 +41,9 @@ export default async function BookingPage({ searchParams }) {
 
       {selectedPackage ? (
         <section className="section">
-          <div className="booking-selected-card booking-selected-premium">
+          <div className="booking-selected-card booking-selected-premium booking-selected-accented">
+            <div className="booking-selected-accent-bar" />
+
             <p className="selected-label">Selected Package</p>
             <h2>{selectedPackage}</h2>
 
@@ -52,7 +54,9 @@ export default async function BookingPage({ searchParams }) {
                   <span className="booking-meta-pill">{details.duration}</span>
                 </div>
 
-                <p className="hero-text booking-summary-text">{details.summary}</p>
+                <p className="hero-text booking-summary-text">
+                  {details.summary}
+                </p>
               </>
             ) : null}
 
@@ -88,7 +92,7 @@ export default async function BookingPage({ searchParams }) {
               booking to choose an available time.
             </p>
 
-                        <div className="booking-package-grid">
+            <div className="booking-package-grid">
               {packages.map((pkg) => (
                 <a
                   key={pkg.title}
@@ -103,7 +107,9 @@ export default async function BookingPage({ searchParams }) {
                   <p className="card-description">{pkg.summary}</p>
 
                   <div className="booking-package-bottom">
-                    <span className="booking-package-duration">{pkg.duration}</span>
+                    <span className="booking-package-duration">
+                      {pkg.duration}
+                    </span>
                     <span className="booking-package-cta">Select Package</span>
                   </div>
                 </a>
@@ -113,7 +119,7 @@ export default async function BookingPage({ searchParams }) {
         </section>
       )}
 
-           <section className="section section-divider booking-support-section">
+      <section className="section section-divider booking-support-section">
         <div className="booking-info-grid">
           <div className="card booking-support-card">
             <p className="eyebrow section-eyebrow">Booking Guide</p>
@@ -176,7 +182,7 @@ export default async function BookingPage({ searchParams }) {
         </div>
       </section>
 
-            <section className="section section-divider">
+      <section className="section section-divider">
         <div className="card booking-note-card booking-note-premium">
           <p className="eyebrow section-eyebrow">Stay Connected</p>
           <h2>See more work and updates on Instagram</h2>

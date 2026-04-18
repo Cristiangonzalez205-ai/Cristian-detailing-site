@@ -1432,3 +1432,24 @@ h2 {
     padding-top: 12px;
   }
 }
+.booking-selected-accented {
+  position: relative;
+  overflow: hidden;
+}
+
+.booking-selected-accent-bar {
+  height: 4px;
+  width: 100%;
+  margin: -28px -28px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 140, 255, 0.92) 0%,
+    rgba(143, 183, 255, 0.92) 100%
+  );
+}
+
+@media (max-width: 800px) {
+  .booking-selected-accent-bar {
+    margin: -20px -20px 18px;
+  }
+}
