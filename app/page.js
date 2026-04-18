@@ -203,78 +203,93 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
-        <h2>Contact</h2>
-        <p className="hero-text">
-          For questions, custom quotes, or specialty services, call or text me
-          directly. For standard appointments, please use the booking page first.
-        </p>
-        <p className="hero-text">
-          You can also see more of my work on Instagram:{' '}
-          <strong>{siteConfig.instagramHandle}</strong>
-        </p>
+            <section className="section section-divider">
+        <div className="contact-card-premium">
+          <div className="contact-card-header">
+            <div>
+              <p className="eyebrow section-eyebrow">Contact</p>
+              <h2>Questions, custom work, or ready to book?</h2>
+            </div>
+            <p className="hero-text contact-card-text">
+              For standard appointments, start with the booking page. For
+              specialty services, custom quotes, or direct questions, call,
+              text, or reach out on Instagram.
+            </p>
+          </div>
 
-        <div className="hero-buttons contact-icon-row">
-          <a
-            href={`tel:${siteConfig.phone}`}
-            className="button secondary icon-only-button"
-            aria-label={`Call ${siteConfig.brandName}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="contact-icon"
-            >
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.45-1.24a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z" />
-            </svg>
-          </a>
+          <div className="contact-card-actions">
+            <div className="hero-buttons contact-icon-row">
+              <a
+                href={`tel:${siteConfig.phone}`}
+                className="button secondary icon-only-button"
+                aria-label={`Call ${siteConfig.brandName}`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-icon"
+                >
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.63a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.45-1.24a2 2 0 0 1 2.11-.45c.85.3 1.73.51 2.63.63A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </a>
 
-          <a
-            href={`sms:${siteConfig.phone}`}
-            className="button secondary icon-only-button"
-            aria-label={`Text ${siteConfig.brandName}`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="contact-icon"
-            >
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
-          </a>
+              <a
+                href={`sms:${siteConfig.phone}`}
+                className="button secondary icon-only-button"
+                aria-label={`Text ${siteConfig.brandName}`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-icon"
+                >
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+              </a>
 
-          <a
-            href={siteConfig.instagramUrl}
-            className="button secondary icon-only-button"
-            target="_blank"
-            rel="noreferrer"
-            aria-label={`Visit ${siteConfig.brandName} Instagram`}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="contact-icon"
-            >
-              <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5" />
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-            </svg>
-          </a>
+              <a
+                href={siteConfig.instagramUrl}
+                className="button secondary icon-only-button"
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`Visit ${siteConfig.brandName} Instagram`}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="contact-icon"
+                >
+                  <rect x="2.5" y="2.5" width="19" height="19" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </div>
+
+            <div className="contact-card-meta">
+              <p className="footer-muted">
+                {siteConfig.instagramHandle}
+              </p>
+              <p className="footer-muted">
+                {siteConfig.locationLine}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
