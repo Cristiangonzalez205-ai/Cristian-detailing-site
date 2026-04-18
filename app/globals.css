@@ -154,6 +154,14 @@ h2 {
   padding: 10px 12px;
   border-radius: 999px;
   font-size: 0.95rem;
+  transition: transform 0.16s ease, border-color 0.16s ease,
+    background-color 0.16s ease, color 0.16s ease;
+}
+
+.service-tags span:hover {
+  transform: translateY(-2px);
+  border-color: #4f8cff;
+  background: #1b2230;
 }
 
 .packages-grid {
