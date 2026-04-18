@@ -124,8 +124,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.95rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   margin-bottom: 18px;
+  max-width: 14ch;
 }
 
 .hero-text,
@@ -1356,5 +1359,59 @@ h2 {
 
   .owner-placeholder-premium {
     padding: 8px;
+  }
+}
+.section h2,
+.card h2,
+.cta h2 {
+  text-wrap: balance;
+}
+
+.hero-text {
+  max-width: 68ch;
+}
+
+.services-overview-text,
+.specialty-services-text,
+.packages-section-text,
+.contact-card-text {
+  max-width: 54ch;
+}
+
+.packages-section-header h2,
+.services-overview-header h2,
+.specialty-services-header h2,
+.contact-card-header h2 {
+  max-width: 12ch;
+}
+
+.booking-selected-card h2,
+.booking-note-premium h2,
+.booking-support-card h2 {
+  max-width: 16ch;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 1.7rem;
+    max-width: 100%;
+  }
+
+  .hero-text,
+  .services-overview-text,
+  .specialty-services-text,
+  .packages-section-text,
+  .contact-card-text {
+    max-width: 100%;
+  }
+
+  .packages-section-header h2,
+  .services-overview-header h2,
+  .specialty-services-header h2,
+  .contact-card-header h2,
+  .booking-selected-card h2,
+  .booking-note-premium h2,
+  .booking-support-card h2 {
+    max-width: 100%;
   }
 }
