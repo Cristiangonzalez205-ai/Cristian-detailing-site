@@ -1,21 +1,5 @@
 import { packages } from '../data/packages'
-
-const bookingLinks = {
-  'Interior Refresh':
-    'https://calendly.com/cristian_gonzalez-berkeley/interior-refresh',
-  'Deep Interior Clean':
-    'https://calendly.com/cristian_gonzalez-berkeley/deep-interior-clean',
-  'Complete Interior Reset':
-    'https://calendly.com/cristian_gonzalez-berkeley/complete-interior-reset',
-  'Exterior Wash':
-    'https://calendly.com/cristian_gonzalez-berkeley/exterior-wash',
-  'Exterior Wash Plus':
-    'https://calendly.com/cristian_gonzalez-berkeley/exterior-wash-plus',
-  'Exterior Detail':
-    'https://calendly.com/cristian_gonzalez-berkeley/exterior-detail',
-  'The Full Detail':
-    'https://calendly.com/cristian_gonzalez-berkeley/the-full-detail',
-}
+import { bookingLinks, siteConfig } from '../data/site'
 
 export default async function BookingPage({ searchParams }) {
   const params = await searchParams
@@ -26,7 +10,7 @@ export default async function BookingPage({ searchParams }) {
   return (
     <main className="page">
       <section className="section booking-hero">
-        <p className="eyebrow">ChrisDoesDetails Booking</p>
+        <p className="eyebrow">{siteConfig.brandName} Booking</p>
         <h1>Book Your Detail</h1>
         <p className="hero-text">
           Choose your package and continue to booking to pick a time that works
@@ -120,9 +104,9 @@ export default async function BookingPage({ searchParams }) {
             </p>
             <div className="hero-buttons contact-icon-row">
               <a
-                href="tel:5595523442"
+                href={`tel:${siteConfig.phone}`}
                 className="button secondary icon-only-button"
-                aria-label="Call ChrisDoesDetails"
+                aria-label={`Call ${siteConfig.brandName}`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -139,9 +123,9 @@ export default async function BookingPage({ searchParams }) {
               </a>
 
               <a
-                href="sms:5595523442"
+                href={`sms:${siteConfig.phone}`}
                 className="button secondary icon-only-button"
-                aria-label="Text ChrisDoesDetails"
+                aria-label={`Text ${siteConfig.brandName}`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -169,11 +153,11 @@ export default async function BookingPage({ searchParams }) {
           </p>
           <div className="hero-buttons contact-icon-row">
             <a
-              href="https://instagram.com/ChrisDoesDetails"
+              href={siteConfig.instagramUrl}
               className="button secondary icon-only-button"
               target="_blank"
               rel="noreferrer"
-              aria-label="Visit ChrisDoesDetails Instagram"
+              aria-label={`Visit ${siteConfig.brandName} Instagram`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

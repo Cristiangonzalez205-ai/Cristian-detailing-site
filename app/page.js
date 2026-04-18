@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import { packages, specialtyServices } from './data/packages'
+import { siteConfig } from './data/site'
 
 export default function HomePage() {
   return (
     <main className="page">
-            <section className="hero">
-        <p className="eyebrow">Mobile Car Detailing in Berkeley</p>
-        <h1>ChrisDoesDetails</h1>
+      <section className="hero">
+        <p className="eyebrow">{siteConfig.locationLine}</p>
+        <h1>{siteConfig.brandName}</h1>
         <p className="hero-text">
           Mobile car detailing in Berkeley with care, discipline, and attention
           to detail — from quick refreshes to full resets.
@@ -85,7 +86,7 @@ export default function HomePage() {
           <div className="owner-placeholder">
             <img
               src="/cars/owner-photo.jpeg"
-              alt="ChrisDoesDetails owner"
+              alt={`${siteConfig.brandName} owner`}
               className="owner-placeholder-image"
             />
           </div>
@@ -143,14 +144,14 @@ export default function HomePage() {
         </p>
         <p className="hero-text">
           You can also see more of my work on Instagram:{' '}
-          <strong>@ChrisDoesDetails</strong>
+          <strong>{siteConfig.instagramHandle}</strong>
         </p>
 
         <div className="hero-buttons contact-icon-row">
           <a
-            href="tel:5595523442"
+            href={`tel:${siteConfig.phone}`}
             className="button secondary icon-only-button"
-            aria-label="Call ChrisDoesDetails"
+            aria-label={`Call ${siteConfig.brandName}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -167,9 +168,9 @@ export default function HomePage() {
           </a>
 
           <a
-            href="sms:5595523442"
+            href={`sms:${siteConfig.phone}`}
             className="button secondary icon-only-button"
-            aria-label="Text ChrisDoesDetails"
+            aria-label={`Text ${siteConfig.brandName}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -186,11 +187,11 @@ export default function HomePage() {
           </a>
 
           <a
-            href="https://instagram.com/ChrisDoesDetails"
+            href={siteConfig.instagramUrl}
             className="button secondary icon-only-button"
             target="_blank"
             rel="noreferrer"
-            aria-label="Visit ChrisDoesDetails Instagram"
+            aria-label={`Visit ${siteConfig.brandName} Instagram`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
