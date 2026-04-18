@@ -9,14 +9,34 @@ export default async function BookingPage({ searchParams }) {
 
   return (
     <main className="page">
-      <section className="section booking-hero">
-        <p className="eyebrow">{siteConfig.brandName} Booking</p>
-        <h1>Book Your Detail</h1>
-        <p className="hero-text">
-          Choose your package and continue to booking to pick a time that works
-          for you. If you need a custom quote, specialty service, or have
-          questions about your vehicle, call or text me directly.
-        </p>
+            <section className="section booking-hero booking-hero-premium">
+        <div className="booking-hero-main">
+          <p className="eyebrow">{siteConfig.brandName} Booking</p>
+          <h1>Book Your Detail</h1>
+          <p className="hero-text booking-hero-lead">
+            Choose your package and continue to booking to pick a time that
+            works for you. If you need a custom quote, specialty service, or
+            have questions about your vehicle, call or text me directly.
+          </p>
+        </div>
+
+        <div className="booking-hero-side">
+          <p className="booking-side-label">What to expect</p>
+          <div className="booking-side-list">
+            <div className="booking-side-item">
+              <span className="booking-side-dot" />
+              <p>Select the package that fits your car</p>
+            </div>
+            <div className="booking-side-item">
+              <span className="booking-side-dot" />
+              <p>Choose an available time through Calendly</p>
+            </div>
+            <div className="booking-side-item">
+              <span className="booking-side-dot" />
+              <p>Use call or text for custom work and quote-based services</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {selectedPackage ? (
@@ -93,9 +113,10 @@ export default async function BookingPage({ searchParams }) {
         </section>
       )}
 
-      <section className="section">
+           <section className="section section-divider booking-support-section">
         <div className="booking-info-grid">
-          <div className="card">
+          <div className="card booking-support-card">
+            <p className="eyebrow section-eyebrow">Booking Guide</p>
             <h2>Before You Book</h2>
             <ul>
               <li>Select the package that best matches your car’s needs</li>
@@ -105,8 +126,9 @@ export default async function BookingPage({ searchParams }) {
             </ul>
           </div>
 
-          <div className="card">
-            <h2>Custom Quotes</h2>
+          <div className="card booking-support-card">
+            <p className="eyebrow section-eyebrow">Custom Quotes</p>
+            <h2>Need specialty work?</h2>
             <p className="hero-text">
               Scratch removal, paint correction, ceramic coating, and other
               specialty work are available by custom quote.
@@ -154,11 +176,13 @@ export default async function BookingPage({ searchParams }) {
         </div>
       </section>
 
-      <section className="section">
-        <div className="card booking-note-card">
-          <h2>Stay Connected</h2>
+            <section className="section section-divider">
+        <div className="card booking-note-card booking-note-premium">
+          <p className="eyebrow section-eyebrow">Stay Connected</p>
+          <h2>See more work and updates on Instagram</h2>
           <p className="hero-text">
-            You can also check out my work and updates on Instagram.
+            Follow {siteConfig.instagramHandle} for more detail work, updates,
+            and future results.
           </p>
           <div className="hero-buttons contact-icon-row">
             <a
