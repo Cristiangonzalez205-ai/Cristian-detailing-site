@@ -14,19 +14,23 @@ export default function GalleryPage() {
         </p>
       </section>
 
-      <section className="section">
+            <section className="section">
         <div className="gallery-grid">
           {galleryItems.map((item) => (
-            <article key={`${item.title}-${item.image}`} className="gallery-card">
-              <div className="gallery-image-wrap">
+            <article
+              key={`${item.title}-${item.image}`}
+              className="gallery-card gallery-card-premium"
+            >
+              <div className="gallery-image-wrap gallery-image-premium-wrap">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="gallery-image"
+                  className="gallery-image gallery-image-premium"
                 />
+                <div className="gallery-image-overlay" />
               </div>
 
-              <div className="gallery-card-body">
+              <div className="gallery-card-body gallery-card-body-premium">
                 <p className="gallery-category">{item.category}</p>
                 <h2 className="gallery-card-title">{item.title}</h2>
                 <p className="card-description">{item.description}</p>
