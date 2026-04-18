@@ -1270,3 +1270,57 @@ h2 {
     margin-bottom: 16px;
   }
 }
+.hero-premium-refined {
+  gap: 34px;
+  align-items: stretch;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-lead {
+  max-width: 600px;
+  font-size: 1.04rem;
+}
+
+.hero-side-card-refined {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-side-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.hero-side-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #171c24;
+  border: 1px solid #2a3342;
+  color: #d1d7e0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .hero-premium-refined {
+    gap: 20px;
+  }
+
+  .hero-lead {
+    max-width: 100%;
+  }
+
+  .hero-side-bottom {
+    margin-top: 16px;
+  }
+}

@@ -5,7 +5,7 @@ import { siteConfig } from './data/site'
 export default function HomePage() {
   return (
     <main className="page">
-      <section className="hero hero-premium">
+            <section className="hero hero-premium hero-premium-refined">
         <div className="hero-main">
           <p className="eyebrow">{siteConfig.locationLine}</p>
           <h1>{siteConfig.brandName}</h1>
@@ -14,14 +14,14 @@ export default function HomePage() {
             attention to detail — from quick refreshes to full resets.
           </p>
 
-                  <div className="hero-buttons hero-cta-row">
-          <Link href="/booking" className="button primary hero-primary-button">
-            Book Now
-          </Link>
-          <Link href="/gallery" className="button secondary hero-secondary-button">
-            View My Work
-          </Link>
-        </div>
+          <div className="hero-buttons hero-cta-row">
+            <Link href="/booking" className="button primary hero-primary-button">
+              Book Now
+            </Link>
+            <Link href="/gallery" className="button secondary hero-secondary-button">
+              View My Work
+            </Link>
+          </div>
 
           <div className="hero-credibility-strip">
             <div className="credibility-pill">Student-Owned</div>
@@ -31,7 +31,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="hero-side-card">
+        <div className="hero-side-card hero-side-card-refined">
           <div className="hero-side-top">
             <img
               src="/cars/logo.jpeg"
@@ -59,6 +59,11 @@ export default function HomePage() {
               <span className="hero-side-dot" />
               <p>Specialty services available by custom quote</p>
             </div>
+          </div>
+
+          <div className="hero-side-bottom">
+            <span className="hero-side-badge">Book online</span>
+            <span className="hero-side-badge">Mobile service</span>
           </div>
         </div>
       </section>
