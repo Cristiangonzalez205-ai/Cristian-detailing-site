@@ -22,10 +22,16 @@ export default function RootLayout({ children }) {
               <span>{siteConfig.brandName}</span>
             </Link>
 
-            <nav className="nav-links">
-              <Link href="/">Home</Link>
-              <Link href="/booking">Booking</Link>
-              <Link href="/gallery">Gallery</Link>
+                        <nav className="nav-links">
+              <Link href="/" className="nav-link">
+                Home
+              </Link>
+              <Link href="/booking" className="nav-link">
+                Booking
+              </Link>
+              <Link href="/gallery" className="nav-link">
+                Gallery
+              </Link>
             </nav>
           </div>
         </header>
