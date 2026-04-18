@@ -1521,3 +1521,11 @@ h2 {
     padding: 18px;
   }
 }
+.nav-link-active {
+  color: #f5f7fb;
+  background: #171c24;
+}
+
+.nav-link-active::after {
+  transform: scaleX(1);
+}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NavLink from './components/nav-link'
 import './globals.css'
 import { siteConfig } from './data/site'
 
@@ -22,16 +23,10 @@ export default function RootLayout({ children }) {
               <span>{siteConfig.brandName}</span>
             </Link>
 
-                        <nav className="nav-links">
-              <Link href="/" className="nav-link">
-                Home
-              </Link>
-              <Link href="/booking" className="nav-link">
-                Booking
-              </Link>
-              <Link href="/gallery" className="nav-link">
-                Gallery
-              </Link>
+            <nav className="nav-links">
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/booking">Booking</NavLink>
+              <NavLink href="/gallery">Gallery</NavLink>
             </nav>
           </div>
         </header>
