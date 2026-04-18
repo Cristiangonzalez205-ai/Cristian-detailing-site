@@ -1324,3 +1324,37 @@ h2 {
     margin-top: 16px;
   }
 }
+.owner-frame {
+  display: flex;
+  justify-content: center;
+}
+
+.owner-placeholder-premium {
+  position: relative;
+  padding: 10px;
+  background: linear-gradient(180deg, #161b22 0%, #10141b 100%);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+.owner-placeholder-premium::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(79, 140, 255, 0.14);
+  pointer-events: none;
+}
+
+.owner-placeholder-premium .owner-placeholder-image {
+  border-radius: 12px;
+}
+
+@media (max-width: 800px) {
+  .owner-frame {
+    justify-content: center;
+  }
+
+  .owner-placeholder-premium {
+    padding: 8px;
+  }
+}

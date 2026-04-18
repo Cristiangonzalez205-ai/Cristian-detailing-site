@@ -146,12 +146,14 @@ export default function HomePage() {
 
       <section className="section section-divider why-choose-section">
         <div className="why-choose-me">
-          <div className="owner-placeholder">
-            <img
-              src="/cars/owner-photo.jpeg"
-              alt={`${siteConfig.brandName} owner`}
-              className="owner-placeholder-image"
-            />
+                    <div className="owner-frame">
+            <div className="owner-placeholder owner-placeholder-premium">
+              <img
+                src="/cars/owner-photo.jpeg"
+                alt={`${siteConfig.brandName} owner`}
+                className="owner-placeholder-image"
+              />
+            </div>
           </div>
 
           <div className="why-choose-copy">
