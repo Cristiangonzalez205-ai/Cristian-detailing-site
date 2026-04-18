@@ -68,15 +68,24 @@ export default async function BookingPage({ searchParams }) {
               booking to choose an available time.
             </p>
 
-            <div className="booking-package-grid">
+                        <div className="booking-package-grid">
               {packages.map((pkg) => (
                 <a
                   key={pkg.title}
                   href={`/booking?package=${encodeURIComponent(pkg.title)}`}
-                  className="card booking-package-option"
+                  className="card booking-package-option booking-package-premium"
                 >
-                  <h3>{pkg.title}</h3>
+                  <div className="booking-package-top">
+                    <p className="booking-package-price">{pkg.price}</p>
+                    <h3>{pkg.title}</h3>
+                  </div>
+
                   <p className="card-description">{pkg.summary}</p>
+
+                  <div className="booking-package-bottom">
+                    <span className="booking-package-duration">{pkg.duration}</span>
+                    <span className="booking-package-cta">Select Package</span>
+                  </div>
                 </a>
               ))}
             </div>
