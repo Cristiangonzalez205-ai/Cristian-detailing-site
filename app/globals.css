@@ -19,15 +19,17 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  background: #11151c;
-  border-bottom: 1px solid #232833;
-  z-index: 10;
+  z-index: 20;
+  background: rgba(15, 17, 21, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(35, 40, 51, 0.85);
 }
 
 .nav-inner {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px 20px;
+  padding: 14px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1204,5 +1206,48 @@ h2 {
   .hero-secondary-button {
     min-width: 0;
     flex: 1 1 auto;
+  }
+}
+.site-header::after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(79, 140, 255, 0) 0%,
+    rgba(79, 140, 255, 0.22) 20%,
+    rgba(79, 140, 255, 0.22) 80%,
+    rgba(79, 140, 255, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.brand-with-logo {
+  padding: 6px 0;
+}
+
+.nav-links {
+  padding: 4px;
+  border: 1px solid rgba(42, 51, 66, 0.9);
+  border-radius: 14px;
+  background: rgba(22, 27, 34, 0.72);
+}
+
+@media (max-width: 800px) {
+  .nav-inner {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .site-header::after {
+    left: 12px;
+    right: 12px;
   }
 }
