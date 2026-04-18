@@ -799,3 +799,23 @@ h2 {
     padding: 18px;
   }
 }
+.section-divider {
+  border-top: 1px solid #232833;
+  padding-top: 34px;
+}
+
+.why-choose-section {
+  margin-top: 6px;
+}
+
+.cta-premium {
+  background: linear-gradient(180deg, #141922 0%, #10141b 100%);
+  border: 1px solid #2a3342;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 800px) {
+  .section-divider {
+    padding-top: 26px;
+  }
+}

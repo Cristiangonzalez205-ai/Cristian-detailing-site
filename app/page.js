@@ -129,7 +129,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className="section">
+            <section className="section section-divider why-choose-section">
         <div className="why-choose-me">
           <div className="owner-placeholder">
             <img
@@ -140,7 +140,8 @@ export default function HomePage() {
           </div>
 
           <div className="why-choose-copy">
-            <h2>Why Choose Me</h2>
+            <p className="eyebrow section-eyebrow">Why Choose Me</p>
+            <h2>Built on discipline, care, and real work ethic</h2>
             <p className="hero-text">
               I’m a Berkeley student from Fresno, California, and I’m no
               stranger to hard work. I worked two jobs during my junior and
@@ -184,16 +185,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section cta">
-        <h2>Ready for a clean reset?</h2>
-        <p>Book a detail, check availability, and bring your car back to life.</p>
-        <div className="hero-buttons">
-          <Link href="/booking" className="button primary">
-            Schedule a Detail
-          </Link>
-          <Link href="/gallery" className="button secondary">
-            See Recent Cars
-          </Link>
+            <section className="section section-divider">
+        <div className="cta cta-premium">
+          <p className="eyebrow section-eyebrow">Get Started</p>
+          <h2>Ready for a clean reset?</h2>
+          <p>
+            Book a detail, check availability, and bring your car back to life.
+          </p>
+          <div className="hero-buttons">
+            <Link href="/booking" className="button primary">
+              Schedule a Detail
+            </Link>
+            <Link href="/gallery" className="button secondary">
+              See Recent Cars
+            </Link>
+          </div>
         </div>
       </section>
 
